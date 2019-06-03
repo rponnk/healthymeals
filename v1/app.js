@@ -6,13 +6,6 @@ app = express();
 app.use(bp.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
-let recipe = 
-[
-    {title: "Fish and rice"},
-    {title: "Tacos"},
-    {title: "Chicken and brocolli"}
-];
-
 app.get('/', (req, res)=> {
     res.render("index");
 });
